@@ -13,7 +13,10 @@ const Navbar = () => {
                 >
                     {Navlinks.map((NavLink) => {
                         return (
-                            <li key={NavLink.id} className="m-4">
+                            <li
+                                key={NavLink.id}
+                                className="m-4 hover:underline hover:cursor-pointer underline-offset-8"
+                            >
                                 {NavLink.title}
                             </li>
                         );
