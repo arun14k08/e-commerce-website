@@ -1,20 +1,15 @@
 import React from "react";
-import { Bulletin, productImages } from "../assets";
+import { productImages } from "../assets";
 import { style } from "../styles";
 import Product from "./Product";
 import { productData } from "../constants";
+import ContainerHeader from "./ContainerHeader";
 
 const Products = () => {
     return (
         <>
-            <div className={`flex items-center`}>
-                <img src={Bulletin} alt="bulletin" />
-                <h2 className="ml-3 text-[#DB4444] font-semibold">Today's</h2>
-            </div>
-            <div className="my-8">
-                <h2 className="text-4xl font-semibold">Flash Sales</h2>
-            </div>
-            <div className="flex gap-4 w-max">
+            <ContainerHeader tabName="Today's" header="Flash Sales" />
+            <div className="flex gap-8 w-max">
                 {productData.map((product, i) => {
                     return (
                         <Product

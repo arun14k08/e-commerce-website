@@ -1,6 +1,6 @@
 import React from "react";
-import { Navbar, Hero, Products } from "./components";
-import { style } from "./styles";
+import { Navbar, Hero, Products, CategoryTabs } from "./components";
+import { style } from "./styles"
 
 function App() {
     return (
@@ -9,6 +9,7 @@ function App() {
                 <Navbar />
                 <Hero />
                 <Products />
+                <CategoryTabs />
             </div>
         </>
     );

@@ -6,7 +6,7 @@ const Product = (props) => {
     return (
         <div className={` flex-col mb-10`} >
             <div
-                className={`bg-[#F5F5F5] ${style.flexCenter} px-8 py-6 relative mb-2`}
+                className={`bg-[#F5F5F5] ${style.flexCenter} px-8 py-6 relative mb-2 rounded-lg`}
             >
                 <div className="absolute top-4 left-4 px-3  rounded-lg bg-[#DB4444] text-white">
                     {`-${props.discount}%`}
