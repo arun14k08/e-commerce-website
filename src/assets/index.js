@@ -15,7 +15,11 @@ import camera from "./camera.svg";
 import gamePad from "./game-pad.svg";
 import headphone from "./headphone.svg";
 import watch from "./watch.svg";
-import phone from "./phone.svg"
+import phone from "./phone.svg";
+import shirt from "./Images/bestSelling/shirt.png";
+import bag from "./Images/bestSelling/bag.png";
+import cooler from "./Images/bestSelling/cooler.png";
+import self from "./Images/bestSelling/self.png";
 
 export const productImages = [
     ProductImage,
@@ -24,6 +28,8 @@ export const productImages = [
     productImage4,
     productImage4,
 ];
+
+export const productImages2 = [shirt, bag, cooler, self];
 
 export {
     WishList,

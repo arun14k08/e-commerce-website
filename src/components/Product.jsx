@@ -4,7 +4,7 @@ import Rating from "./Rating";
 
 const Product = (props) => {
     return (
-        <div className={` flex-col mb-10`} >
+        <div className={` flex-col mb-10`}>
             <div
                 className={`bg-[#F5F5F5] ${style.flexCenter} px-8 py-6 relative mb-2 rounded-lg`}
             >
@@ -20,7 +20,7 @@ const Product = (props) => {
                     <s className="text-[#7D8184]">${props.priceCross}</s>
                 </span>
                 <span className="flex gap-1">
-                    <Rating stars={props.stars}/>
+                    <Rating stars={props.stars} />
                 </span>
                 <p>{`(${props.totalRatings})`}</p>
             </div>

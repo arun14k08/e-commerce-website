@@ -6,10 +6,16 @@
 
 * {
     font-family: "Poppins", "sans-serif";
-    /* border: 1px solid #0000002d; */
+    border: 1px solid #0000002d;
 }
 
-.hover-effect:hover img,
-.hover-effect:hover h3 {
+.category-cards:hover {
+    background-color: #db4444;
+    cursor: pointer;
+    border: none;
+}
+
+.category-cards:hover img,
+.category-cards:hover:hover h3 {
     filter: invert(100%);
 }

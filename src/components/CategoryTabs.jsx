@@ -8,7 +8,7 @@ import { category } from "../constants";
 const CategoryTabs = () => {
     let src = [phone, computer, watch, camera, headphone, gamePad];
     return (
-        <div>
+        <div className="mb-4">
             <ContainerHeader tabName="Categories" header="Browse By Category" />
             <div className={`${style.flexCenter} ${style.paddingX}`}>
                 {category.map((category, i) => {

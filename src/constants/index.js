@@ -99,3 +99,42 @@ export const category = [
         name: "Gaming",
     },
 ];
+
+export const BestSellingProducts = [
+    {
+        name: "The north coat",
+        id: "The north coat",
+        price: 260,
+        priceCross: 360,
+        discount: 25,
+        totalRatings: 65,
+        stars: 5,
+    },
+    {
+        name: "Gucci duffle bag",
+        id: "Gucci duffle bag",
+        price: 960,
+        priceCross: 1160,
+        discount: 25,
+        totalRatings: 75,
+        stars: 5,
+    },
+    {
+        name: "RGB liquid CPU Cooler",
+        id: "RGB liquid CPU Cooler",
+        price: 160,
+        priceCross: 170,
+        discount: 25,
+        totalRatings: 110,
+        stars: 5,
+    },
+    {
+        name: "Small BookSelf",
+        id: "Small BookSelf",
+        price: 360,
+        priceCross: 400,
+        discount: 25,
+        totalRatings: 15,
+        stars: 5,
+    },
+];

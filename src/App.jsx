@@ -1,6 +1,12 @@
 import React from "react";
-import { Navbar, Hero, Products, CategoryTabs } from "./components";
-import { style } from "./styles"
+import {
+    Navbar,
+    Hero,
+    Products,
+    CategoryTabs,
+    BestSelling,
+} from "./components";
+import { style } from "./styles";
 
 function App() {
     return (
@@ -10,6 +16,7 @@ function App() {
                 <Hero />
                 <Products />
                 <CategoryTabs />
+                <BestSelling />
             </div>
         </>
     );
