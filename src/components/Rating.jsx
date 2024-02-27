@@ -1,16 +1,14 @@
-import React from 'react'
-import { FillStar } from '../assets'
+import React, { useState } from "react";
+import { FillStar, NoFillStar } from "../assets";
 
-const Rating = () => {
-  return (
-    <>
-    <img src={FillStar} alt="star" />
-    <img src={FillStar} alt="star" />
-    <img src={FillStar} alt="star" />
-    <img src={FillStar} alt="star" />
-    <img src={FillStar} alt="star" />
-</>
-  )
-}
+const Rating = (props) => {
+    return <>
+      <img src={FillStar} alt="" />
+      <img src={FillStar} alt="" />
+      <img src={FillStar} alt="" />
+      <img src={FillStar} alt="" />
+      <img src={FillStar} alt="" />
+    </>;
+};
 
-export default Rating
+export default Rating;

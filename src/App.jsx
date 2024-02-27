@@ -5,7 +5,7 @@ import { style } from "./styles";
 function App() {
     return (
         <>
-            <div className={`w-full ${style.paddingX}`}>
+            <div className={`w-full ${style.paddingX} overflow-hidden`}>
                 <Navbar />
                 <Hero />
                 <Products />
