@@ -25,7 +25,7 @@ export const HeroText = {
     buttonText: "Shop Now ->",
 };
 
-export const productData = [
+export const productData = [ 
     {
         name: "HAVIT HV-G92 Gamepad",
         id: "HAVIT HV-G92 Gamepad",
@@ -64,7 +64,7 @@ export const productData = [
     },
     {
         name: "S-Series Comfort Chair ",
-        id: "S-Series Comfort Chair ",
+        id: "S-Series Comfort Chair 2",
         price: 375,
         priceCross: 400,
         discount: 25,

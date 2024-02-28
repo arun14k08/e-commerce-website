@@ -1,16 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { productImages } from "../assets";
 import { style } from "../styles";
 import Product from "./Product";
 import { productData } from "../constants";
 import ContainerHeader from "./ContainerHeader";
+import { client } from "../lib/client";
 
 const Products = () => {
+    const [flashSales, setFlashSales] = useState([]);
+
+    useEffect(() => {
+        client
+            .fetch(
+                `*[_type == "product"]{
+                id,
+                name,
+                price,
+                priceCross,
+                discount,
+                totalRatings,
+                stars,
+                image,
+              }`
+            )
+            .then((res) => {
+                // console.log(res);
+                setFlashSales(res);
+            })
+            .catch((err) => console.log(err));
+    }, []);
     return (
         <>
             <ContainerHeader tabName="Today's" header="Flash Sales" />
             <div className="flex gap-8 w-max">
-                {productData.map((product, i) => {
+                {flashSales.map((product, i) => {
                     return (
                         <Product
                             key={product.id}
@@ -20,7 +43,7 @@ const Products = () => {
                             totalRatings={product.totalRatings}
                             stars={product.stars}
                             discount={product.discount}
-                            image={productImages[i]}
+                            image={product?.image[0]}
                         />
                     );
                 })}

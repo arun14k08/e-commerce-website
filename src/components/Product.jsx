@@ -1,8 +1,12 @@
 import React from "react";
 import { style } from "../styles";
 import Rating from "./Rating";
+import { urlFor } from "../lib/client";
+import { ProductImage, productImages } from "../assets";
 
 const Product = (props) => {
+    // console.log( props.test &&    urlFor(props.test).url());
+    // console.log(urlFor(props.test).toString());
     return (
         <div className={` flex-col mb-10`}>
             <div
@@ -11,7 +15,10 @@ const Product = (props) => {
                 <div className="absolute top-4 left-4 px-3  rounded-lg bg-[#DB4444] text-white">
                     {`-${props.discount}%`}
                 </div>
-                <img src={props.image} alt="product" />
+                {
+                    // props.image && 
+                (<img src={  props.image &&    urlFor(props.image).url() } alt="product" />)
+                }
             </div>
             <div className="flex flex-col gap-2">
                 <p className="font-semibold">{props.name}</p>
