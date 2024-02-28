@@ -2,8 +2,8 @@ import React from "react";
 import ContainerHeader from "./ContainerHeader";
 import { style } from "../styles";
 import CategoryCards from "./CategoryCards";
-import { computer, camera, gamePad, headphone, watch, phone } from "../assets";
 import { category } from "../constants";
+import {phone, computer, watch, camera, headphone, gamePad} from "../assets/index"
 
 const CategoryTabs = () => {
     let src = [phone, computer, watch, camera, headphone, gamePad];

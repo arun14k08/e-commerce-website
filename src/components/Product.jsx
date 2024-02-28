@@ -2,7 +2,7 @@ import React from "react";
 import { style } from "../styles";
 import Rating from "./Rating";
 import { urlFor } from "../lib/client";
-import { ProductImage, productImages } from "../assets";
+
 
 const Product = (props) => {
     // console.log( props.test &&    urlFor(props.test).url());

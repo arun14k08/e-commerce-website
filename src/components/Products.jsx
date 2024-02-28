@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { productImages } from "../assets";
 import { style } from "../styles";
 import Product from "./Product";
-import { productData } from "../constants";
 import ContainerHeader from "./ContainerHeader";
 import { client } from "../lib/client";
 
-const Products = () => {
+const Products = (props) => {
     const [flashSales, setFlashSales] = useState([]);
 
     useEffect(() => {
@@ -21,7 +19,7 @@ const Products = () => {
                 totalRatings,
                 stars,
                 image,
-              }`
+                }`
             )
             .then((res) => {
                 // console.log(res);
@@ -31,7 +29,7 @@ const Products = () => {
     }, []);
     return (
         <>
-            <ContainerHeader tabName="Today's" header="Flash Sales" />
+            <ContainerHeader tabName="Today's" header="Flash Sales"/>
             <div className="flex gap-8 w-max">
                 {flashSales.map((product, i) => {
                     return (

@@ -1,6 +1,5 @@
 import React from "react";
 import { style } from "../styles";
-import { camera, phone } from "../assets";
 const CategoryCards = (props) => {
     return (
         <div

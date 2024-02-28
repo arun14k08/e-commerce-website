@@ -5,6 +5,7 @@ import {
     Products,
     CategoryTabs,
     BestSelling,
+    Timer,
 } from "./components";
 import { style } from "./styles";
 

@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { style } from "../styles";
 import ContainerHeader from "./ContainerHeader";
 import Product from "./Product";
-import { BestSellingProducts } from "../constants";
-import { productImages2 } from "../assets";
 import { client } from "../lib/client";
 const BestSelling = () => {
     const [bestSelling, setBestSelling] = useState([]);
@@ -11,7 +9,7 @@ const BestSelling = () => {
     useEffect(() => {
         client
             .fetch(
-                `*[_type == "product"]{
+                `*[_type == "bestSelling"]{
                 id,
                 name,
                 price,
@@ -20,7 +18,7 @@ const BestSelling = () => {
                 totalRatings,
                 stars,
                 image,
-              }`
+                }`
             )
             .then((res) => {
                 // console.log(res);
