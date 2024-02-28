@@ -5,7 +5,7 @@ import { HeroText } from "../constants";
 
 const Hero = () => {
     return (
-        <div className={`${style.boxWidth} flex ${style.paddingY} mb-12`}>
+        <div className={`${style.boxWidth} flex ${style.paddingY}`}>
             <div className={`${style.flexCenter} w-[100%]`}>
                 <h1>Categories</h1>
             </div>

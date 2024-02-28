@@ -4,7 +4,7 @@ import { Bulletin } from "../assets";
 import Timer from "./Timer";
 
 const ContainerHeader = (props) => {
-    console.log(props);
+    // console.log(props);
     return (
         <>
             <div className={`flex items-center`}>
@@ -12,7 +12,7 @@ const ContainerHeader = (props) => {
                 <h2 className="ml-3 text-[#DB4444] font-semibold">
                     {props.tabName}
                 </h2>
-                <Timer/>
+                {props.needTimer ? <Timer /> : null}
             </div>
             <div className="my-8">
                 <h2 className="text-4xl font-semibold">{props.header}</h2>

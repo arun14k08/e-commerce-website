@@ -29,7 +29,7 @@ const Products = (props) => {
     }, []);
     return (
         <>
-            <ContainerHeader tabName="Today's" header="Flash Sales"/>
+            <ContainerHeader tabName="Today's" header="Flash Sales" needTimer={true}/>
             <div className="flex gap-8 w-max">
                 {flashSales.map((product, i) => {
                     return (
