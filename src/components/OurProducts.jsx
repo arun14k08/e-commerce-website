@@ -32,7 +32,7 @@ const OurProducts = () => {
                 header="Explore Our Products"
             />
             <div className="flex gap-8 w-max">
-                {bestSelling.map((product, i) => {
+                {bestSelling.map(product => {
                     return (
                         <Product
                             key={product.id}

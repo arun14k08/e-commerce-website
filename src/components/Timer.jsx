@@ -44,7 +44,7 @@ const Timer = () => {
     }, [Timer]);
 
     return (
-        <div className="ml-12 flex mr-auto justify-around items-center">
+        <div className="ml-40 flex mr-auto justify-around items-center">
             <div className="flex flex-col justify-center items-center">
                 <p className="text-lg font-semibold">Day&#39;s</p>
                 <h3 className="text-4xl font-semibold">

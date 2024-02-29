@@ -15,7 +15,6 @@ const Product = (props) => {
                     {`-${props.discount}%`}
                 </div>
                 {
-                    // props.image &&
                     <img
                         src={
                             props.image
