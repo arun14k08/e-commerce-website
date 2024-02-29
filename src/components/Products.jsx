@@ -8,10 +8,9 @@ const Products = (props) => {
     const [flashSales, setFlashSales] = useState([]);
 
     useEffect(() => {
-        
         client
             .fetch(
-                `*[_type == "product"]{
+                `*[_type == "flashSales"]{
                 id,
                 name,
                 price,
@@ -23,14 +22,53 @@ const Products = (props) => {
                 }`
             )
             .then((res) => {
-                // console.log(res);
+                console.log(res);
+                if (res.length < 2) {
+                    res = [
+                        ...res,
+                        {
+                            id: "pace-holder-1",
+                            name: "name",
+                            price: "0",
+                            priceCross: "0",
+                            totalRatings: "0",
+                            stars: "0",
+                            discount: "0",
+                            image: "",
+                        },
+                        {
+                            id: "pace-holder-2",
+                            name: "name",
+                            price: "0",
+                            priceCross: "0",
+                            totalRatings: "0",
+                            stars: "0",
+                            discount: "0",
+                            image: "",
+                        },
+                        {
+                            id: "pace-holder-3",
+                            name: "name",
+                            price: "0",
+                            priceCross: "0",
+                            totalRatings: "0",
+                            stars: "0",
+                            discount: "0",
+                            image: "",
+                        },
+                    ];
+                }
                 setFlashSales(res);
             })
             .catch((err) => console.log(err));
     }, []);
     return (
         <>
-            <ContainerHeader tabName="Today's" header="Flash Sales" needTimer={true}/>
+            <ContainerHeader
+                tabName="Today's"
+                header="Flash Sales"
+                needTimer={true}
+            />
             <div className="flex gap-8 w-max">
                 {flashSales.map((product, i) => {
                     return (
@@ -49,6 +87,17 @@ const Products = (props) => {
             </div>
         </>
     );
+};
+
+Product.defaultProps = {
+    key: "pace-holder",
+    name: "name",
+    price: "0",
+    priceCross: "0",
+    totalRatings: "0",
+    stars: "0",
+    discount: "0",
+    image: "",
 };
 
 export default Products;

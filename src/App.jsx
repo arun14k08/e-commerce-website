@@ -5,7 +5,9 @@ import {
     Products,
     CategoryTabs,
     BestSelling,
+    OurProducts,
 } from "./components";
+import NewArrival from "./components/NewArrival";
 import { style } from "./styles";
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
                 <Products />
                 <CategoryTabs />
                 <BestSelling />
+                <OurProducts />
+                <NewArrival />
             </div>
         </>
     );

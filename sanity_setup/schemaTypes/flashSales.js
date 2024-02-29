@@ -1,6 +1,6 @@
-export const product = {
-  name: 'product',
-  title: 'Product',
+export const flashSales = {
+  name: 'flashSales',
+  title: 'Flash Sales',
   type: 'document',
   fields: [
     {
