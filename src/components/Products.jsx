@@ -8,6 +8,7 @@ const Products = (props) => {
     const [flashSales, setFlashSales] = useState([]);
 
     useEffect(() => {
+        
         client
             .fetch(
                 `*[_type == "product"]{
@@ -41,7 +42,7 @@ const Products = (props) => {
                             totalRatings={product.totalRatings}
                             stars={product.stars}
                             discount={product.discount}
-                            image={product?.image[0]}
+                            image={product.image[0]}
                         />
                     );
                 })}

@@ -3,7 +3,6 @@ import { style } from "../styles";
 import Rating from "./Rating";
 import { urlFor } from "../lib/client";
 
-
 const Product = (props) => {
     // console.log( props.test &&    urlFor(props.test).url());
     // console.log(urlFor(props.test).toString());
@@ -16,8 +15,15 @@ const Product = (props) => {
                     {`-${props.discount}%`}
                 </div>
                 {
-                    // props.image && 
-                (<img src={  props.image &&    urlFor(props.image).url() } alt="product" />)
+                    // props.image &&
+                    <img
+                        src={
+                            props.image
+                                ? urlFor(props.image).url()
+                                : "https://placehold.co/180x190"
+                        }
+                        alt="product"
+                    />
                 }
             </div>
             <div className="flex flex-col gap-2">

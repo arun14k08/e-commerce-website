@@ -1,11 +1,10 @@
-import React from "react";
+// import React from "react";
 import {
     Navbar,
     Hero,
     Products,
     CategoryTabs,
     BestSelling,
-    Timer,
 } from "./components";
 import { style } from "./styles";
 

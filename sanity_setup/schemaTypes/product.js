@@ -12,6 +12,7 @@ export const product = {
         hotspot: true,
       },
     },
+    
     {
       name:"id",
       title:"ID",
