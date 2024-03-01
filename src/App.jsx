@@ -7,6 +7,7 @@ import {
     BestSelling,
     OurProducts,
     Footer,
+    NotFound,
 } from "./components";
 import Fetures from "./components/Fetures";
 import NewArrival from "./components/NewArrival";
@@ -24,6 +25,7 @@ function App() {
                 <OurProducts />
                 <NewArrival />
                 <Fetures />
+                {/* <NotFound /> */}
             </div>
             <Footer />
         </>

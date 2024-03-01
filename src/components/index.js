@@ -8,6 +8,8 @@ import Timer from "./Timer";
 import OurProducts from "./OurProducts";
 import Product from "./Product";
 import Footer from "./Footer";
+import NotFound from "./NotFound";
+import Button from "./Button";
 
 export {
     Navbar,
@@ -20,4 +22,6 @@ export {
     Timer,
     OurProducts,
     Footer,
+    NotFound,
+    Button,
 };

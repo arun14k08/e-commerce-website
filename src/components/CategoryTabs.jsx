@@ -8,7 +8,7 @@ import {phone, computer, watch, camera, headphone, gamePad} from "../assets/inde
 const CategoryTabs = () => {
     let src = [phone, computer, watch, camera, headphone, gamePad];
     return (
-        <div className="mb-4">
+        <div className="mb-20">
             <ContainerHeader tabName="Categories" header="Browse By Category" />
             <div className={`${style.flexCenter} ${style.paddingX}`}>
                 {category.map((category, i) => {

@@ -27,12 +27,12 @@ const BestSelling = () => {
             .catch((err) => console.log(err));
     }, []);
     return (
-        <div>
+        <div className="mb-20">
             <ContainerHeader
                 tabName="This Month"
                 header="Best Selling Products"
             />
-            <div  className="flex w-full flex-wrap justify-around">
+            <div className="flex w-full flex-wrap justify-around">
                 {bestSelling.map((product, i) => {
                     return (
                         <Product

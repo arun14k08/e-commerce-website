@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { client } from "../lib/client";
-import { ContainerHeader, Product } from "./index";
+import { ContainerHeader, Product, Button } from "./index";
 
 const OurProducts = () => {
     const [bestSelling, setBestSelling] = useState([]);
@@ -26,7 +26,7 @@ const OurProducts = () => {
             .catch((err) => console.log(err));
     }, []);
     return (
-        <div>
+        <div className="mb-20">
             <ContainerHeader
                 tabName="Our Products"
                 header="Explore Our Products"
@@ -48,6 +48,7 @@ const OurProducts = () => {
                         </>
                     );
                 })}
+                <Button title="View All Products" />
             </div>
         </div>
     );

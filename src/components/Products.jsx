@@ -3,6 +3,7 @@ import { style } from "../styles";
 import Product from "./Product";
 import ContainerHeader from "./ContainerHeader";
 import { client } from "../lib/client";
+import { Button } from "../components";
 
 const Products = (props) => {
     const [flashSales, setFlashSales] = useState([]);
@@ -64,26 +65,29 @@ const Products = (props) => {
     }, []);
     return (
         <>
-            <ContainerHeader
-                tabName="Today's"
-                header="Flash Sales"
-                needTimer={true}
-            />
-            <div className="flex w-full flex-wrap justify-around">
-                {flashSales.map((product) => {
-                    return (
-                        <Product
-                            key={product.id}
-                            name={product.name}
-                            price={product.price}
-                            priceCross={product.priceCross}
-                            totalRatings={product.totalRatings}
-                            stars={product.stars}
-                            discount={product.discount}
-                            image={product.image[0]}
-                        />
-                    );
-                })}
+            <div className="mb-20">
+                <ContainerHeader
+                    tabName="Today's"
+                    header="Flash Sales"
+                    needTimer={true}
+                />
+                <div className="flex w-full flex-wrap justify-around">
+                    {flashSales.map((product) => {
+                        return (
+                            <Product
+                                key={product.id}
+                                name={product.name}
+                                price={product.price}
+                                priceCross={product.priceCross}
+                                totalRatings={product.totalRatings}
+                                stars={product.stars}
+                                discount={product.discount}
+                                image={product.image[0]}
+                            />
+                        );
+                    })}
+                    <Button title="View All Products" />
+                </div>
             </div>
         </>
     );
