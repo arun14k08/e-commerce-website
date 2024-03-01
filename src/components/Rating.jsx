@@ -8,6 +8,7 @@ const Rating = (props) => {
       <img src={FillStar} alt="" />
       <img src={FillStar} alt="" />
       <img src={FillStar} alt="" />
+
     </>;
 };
 

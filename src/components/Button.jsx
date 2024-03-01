@@ -2,7 +2,9 @@
 
 const Button = (props) => {
     return (
-        <button className="bg-[#DB4444] text-white p-4">{props.title}</button>
+        <button className="bg-[#DB4444] text-white p-4 rounded-md">
+            {props.title}
+        </button>
     );
 };
 

@@ -8,6 +8,7 @@ import {
     OurProducts,
     Footer,
     NotFound,
+    ProductDetails,
 } from "./components";
 import Fetures from "./components/Fetures";
 import NewArrival from "./components/NewArrival";
@@ -18,14 +19,15 @@ function App() {
         <>
             <div className={`w-full ${style.paddingX} overflow-hidden`}>
                 <Navbar />
-                <Hero />
+                {/* <Hero />
                 <Products />
                 <CategoryTabs />
                 <BestSelling />
                 <OurProducts />
                 <NewArrival />
                 <Fetures />
-                {/* <NotFound /> */}
+                <NotFound /> */}
+                <ProductDetails />
             </div>
             <Footer />
         </>

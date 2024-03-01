@@ -10,6 +10,8 @@ import Product from "./Product";
 import Footer from "./Footer";
 import NotFound from "./NotFound";
 import Button from "./Button";
+import {Counter} from "./Counter";
+import ProductDetails from "./ProductDetails";
 
 export {
     Navbar,
@@ -24,4 +26,6 @@ export {
     Footer,
     NotFound,
     Button,
+    ProductDetails,
+    Counter,
 };
