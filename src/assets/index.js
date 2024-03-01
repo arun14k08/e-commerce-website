@@ -12,7 +12,9 @@ import watch from "./watch.svg";
 import camera from "./camera.svg";
 import headphone from "./headphone.svg";
 import gamePad from "./game-pad.svg";
-
+import services from "./Services.svg";
+import money from "./money.svg";
+import customer from "./customer.svg"
 
 export {
     WishList,
@@ -29,4 +31,7 @@ export {
     camera,
     headphone,
     gamePad,
+    services,
+    money,
+    customer,
 };

@@ -6,7 +6,9 @@ import {
     CategoryTabs,
     BestSelling,
     OurProducts,
+    Footer,
 } from "./components";
+import Fetures from "./components/Fetures";
 import NewArrival from "./components/NewArrival";
 import { style } from "./styles";
 
@@ -21,6 +23,8 @@ function App() {
                 <BestSelling />
                 <OurProducts />
                 <NewArrival />
+                <Fetures/>
+                <Footer/>
             </div>
         </>
     );

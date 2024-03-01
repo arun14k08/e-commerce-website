@@ -22,7 +22,7 @@ const Products = (props) => {
                 }`
             )
             .then((res) => {
-                console.log(res);
+                // console.log(res);
                 if (res.length < 2) {
                     res = [
                         ...res,

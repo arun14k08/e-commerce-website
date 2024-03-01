@@ -16,8 +16,8 @@ const NewArrival = () => {
                 }`
             )
             .then((res) => {
-                console.log(res);
-                console.log(urlFor(res[0].image[0]).url());
+                // console.log(res);
+                // console.log(urlFor(res[0].image[0]).url());
                 setNewArrival(res);
             })
             .catch((err) => console.log(err));
@@ -27,7 +27,7 @@ const NewArrival = () => {
         <>
             <ContainerHeader tabName="Featured" header="New Arrival" />
             <div
-                className={`${style.boxWidth} flex items-center gap-6 mb-8 text-white`}
+                className={`${style.boxWidth} flex items-center gap-6 text-white mb-12`}
             >
                 <div className="w-[100%] h-[600px] bg-black rounded-lg p-6 px-10 flex flex-col justify-end items-start overflow-hidden relative">
                     <img
@@ -36,7 +36,7 @@ const NewArrival = () => {
                                 ? urlFor(newArrival[1].image[0]).url()
                                 : ""
                         }
-                        className="absolute"
+                        className="absolute bottom-0"
                         alt=""
                     />
                     <div className="z-10">
@@ -72,11 +72,11 @@ const NewArrival = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="w-[100%] h-[280px] rounded-lg flex justify-between">
+                    <div className="w-[100%] h-[280px] rounded-lg flex justify-between gap-12">
                         <div className="w-[320px] h-[100%] bg-black rounded-lg p-4  flex flex-col justify-end items-start overflow-hidden relative">
                             <img
                                 src={
-                                    newArrival.length
+                                    newArrival.length > 0
                                         ? urlFor(newArrival[3].image[0]).url()
                                         : ""
                                 }
