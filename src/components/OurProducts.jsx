@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { client } from "../lib/client";
-import {ContainerHeader, Product} from "./index"
+import { ContainerHeader, Product } from "./index";
 
 const OurProducts = () => {
     const [bestSelling, setBestSelling] = useState([]);
@@ -25,30 +25,32 @@ const OurProducts = () => {
             })
             .catch((err) => console.log(err));
     }, []);
-  return (
-    <div>
+    return (
+        <div>
             <ContainerHeader
                 tabName="Our Products"
                 header="Explore Our Products"
             />
-            <div className="flex gap-8 w-max">
-                {bestSelling.map(product => {
+            <div className="flex w-full flex-wrap justify-around">
+                {bestSelling.map((product) => {
                     return (
-                        <Product
-                            key={product.id}
-                            name={product.name}
-                            price={product.price}
-                            priceCross={product.priceCross}
-                            totalRatings={product.totalRatings}
-                            stars={product.stars}
-                            discount={product.discount}
-                            image={product.image[0]}
-                        />
+                        <>
+                            <Product
+                                key={product.id}
+                                name={product.name}
+                                price={product.price}
+                                priceCross={product.priceCross}
+                                totalRatings={product.totalRatings}
+                                stars={product.stars}
+                                discount={product.discount}
+                                image={product.image[0]}
+                            />
+                        </>
                     );
                 })}
             </div>
         </div>
-  )
-}
+    );
+};
 
-export default OurProducts
+export default OurProducts;

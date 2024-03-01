@@ -69,8 +69,8 @@ const Products = (props) => {
                 header="Flash Sales"
                 needTimer={true}
             />
-            <div className="flex gap-8 w-max">
-                {flashSales.map((product, i) => {
+            <div className="flex w-full flex-wrap justify-around">
+                {flashSales.map((product) => {
                     return (
                         <Product
                             key={product.id}

@@ -32,7 +32,7 @@ const BestSelling = () => {
                 tabName="This Month"
                 header="Best Selling Products"
             />
-            <div className="flex gap-8 w-max">
+            <div  className="flex w-full flex-wrap justify-around">
                 {bestSelling.map((product, i) => {
                     return (
                         <Product

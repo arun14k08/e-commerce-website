@@ -23,9 +23,9 @@ function App() {
                 <BestSelling />
                 <OurProducts />
                 <NewArrival />
-                <Fetures/>
-                <Footer/>
+                <Fetures />
             </div>
+            <Footer />
         </>
     );
 }

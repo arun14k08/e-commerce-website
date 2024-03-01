@@ -9,7 +9,7 @@ const Hero = () => {
             <div className={`${style.flexCenter} w-[100%]`}>
                 <h1>Categories</h1>
             </div>
-            <div className={`bg-black w-[300%] overflow-hidden flex`}>
+            <div className={`bg-black w-[200%] overflow-hidden flex`}>
                 <div
                     className={`w-[100%] text-white flex flex-col ${style.paddingX} ${style.paddingY}`}
                 >

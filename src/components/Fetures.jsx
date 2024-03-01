@@ -5,7 +5,7 @@ import { features } from "../constants";
 
 const Fetures = () => {
     return (
-        <div className={`${style.flexCenter} my-16 gap-8`}>
+        <div className={`${style.flexCenter} my-16 gap-[100px]`}>
             {features.map((feature) => {
                 return (
                     <div
