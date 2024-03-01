@@ -27,7 +27,7 @@ const NewArrival = () => {
         <>
             <ContainerHeader tabName="Featured" header="New Arrival" />
             <div
-                className={`${style.boxWidth} flex items-center gap-6 text-white mb-12`}
+                className={`${style.boxWidth} flex items-center gap-6 text-white mb-12 md:flex-nowrap flex-wrap`}
             >
                 <div className="w-[100%] h-[600px] bg-black rounded-lg p-6 px-10 flex flex-col justify-end items-start overflow-hidden relative">
                     <img

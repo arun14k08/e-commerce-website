@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { style } from "../styles";
+import { useEffect, useState } from "react";
+// import { style } from "../styles";
 import ContainerHeader from "./ContainerHeader";
 import Product from "./Product";
 import { client } from "../lib/client";
@@ -33,7 +33,7 @@ const BestSelling = () => {
                 header="Best Selling Products"
             />
             <div className="flex w-full flex-wrap justify-around">
-                {bestSelling.map((product, i) => {
+                {bestSelling.map((product) => {
                     return (
                         <Product
                             key={product.id}

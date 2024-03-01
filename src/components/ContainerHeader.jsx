@@ -7,7 +7,7 @@ const ContainerHeader = (props) => {
     // console.log(props);
     return (
         <>
-            <div className={`flex items-center mt-5`}>
+            <div className={`flex items-center mt-5 `}>
                 <img src={Bulletin} alt="bulletin" />
                 <h2 className="ml-3 text-[#DB4444] font-semibold">
                     {props.tabName}

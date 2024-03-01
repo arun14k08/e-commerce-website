@@ -5,7 +5,7 @@ const Footer = () => {
         <div
             className={`${style.flexCenter} flex-col w-full text-white bg-black pt-12`}
         >
-            <div className="flex justify-between w-full px-6">
+            <div className="flex justify-between w-full px-6 flex-wrap sm:flex-row flex-col gap-8">
                 <div className="flex flex-col gap-4">
                     <h2 className="text-[24px] font-bold">Exclusive</h2>
                     <p className="text-[16px] font-medium">Subscribe</p>
