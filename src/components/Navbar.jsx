@@ -15,7 +15,7 @@ const Navbar = () => {
                         return (
                             <li
                                 key={NavLink.id}
-                                className="m-4 hover:underline hover:cursor-pointer underline-offset-8"
+                                className="m-4 transition-all hover:underline hover:cursor-pointer underline-offset-8"
                             >
                                 {NavLink.title}
                             </li>

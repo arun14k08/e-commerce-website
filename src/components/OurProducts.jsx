@@ -48,7 +48,7 @@ const OurProducts = () => {
                         </>
                     );
                 })}
-                <Button title="View All Products" />
+                <Button key={"btn"} title="View All Products" />
             </div>
         </div>
     );

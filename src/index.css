@@ -6,13 +6,15 @@
 
 * {
     font-family: "Poppins", "sans-serif";
-    /* border: 1px solid #0000002d; */
+    border: 1px solid #0000002d;
 }
 
 .category-cards:hover {
     background-color: #db4444;
     cursor: pointer;
-    border: none;
+    border-color: #db4444;
+    color: white;
+    transition: 0.3s;
 }
 
 .category-cards:hover img,

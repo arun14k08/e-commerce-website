@@ -25,8 +25,8 @@ function App() {
                 <BestSelling />
                 <OurProducts />
                 <NewArrival />
-                <Fetures />
-                <NotFound /> */}
+                <Fetures /> */}
+                {/* <NotFound /> */}
                 <ProductDetails />
             </div>
             <Footer />
