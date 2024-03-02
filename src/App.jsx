@@ -13,23 +13,38 @@ import {
 import Fetures from "./components/Fetures";
 import NewArrival from "./components/NewArrival";
 import { style } from "./styles";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
     return (
         <>
-            <div className={`w-full ${style.paddingX} overflow-hidden`}>
-                <Navbar />
-                {/* <Hero />
-                <Products />
-                <CategoryTabs />
-                <BestSelling />
-                <OurProducts />
-                <NewArrival />
-                <Fetures /> */}
-                {/* <NotFound /> */}
-                <ProductDetails />
-            </div>
-            <Footer />
+            <BrowserRouter>
+                <div className={`w-full ${style.paddingX} overflow-hidden`}>
+                        <Navbar />
+                    <Routes>
+                        <Route
+                            path="/"
+                            element={
+                                <>
+                                    <Hero />
+                                    <Products />
+                                    <CategoryTabs />
+                                    <BestSelling />
+                                    <OurProducts />
+                                    <NewArrival />
+                                    <Fetures />
+                                </>
+                            }
+                        ></Route>
+                        <Route path="*" element={<NotFound />}></Route>
+                        <Route
+                            path="/test"
+                            element={<ProductDetails />}
+                        ></Route>
+                    </Routes>
+                </div>
+                <Footer />
+            </BrowserRouter>
         </>
     );
 }

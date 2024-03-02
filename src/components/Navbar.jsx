@@ -1,7 +1,8 @@
-import React from "react";
+// import React from "react";
 import { Navlinks } from "../constants";
 import { Cart, WishList, Search } from "../assets";
 import { style } from "../styles";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -17,7 +18,9 @@ const Navbar = () => {
                                 key={NavLink.id}
                                 className="m-4 transition-all hover:underline hover:cursor-pointer underline-offset-8"
                             >
+                                <Link to={NavLink.to}>
                                 {NavLink.title}
+                                </Link>
                             </li>
                         );
                     })}
