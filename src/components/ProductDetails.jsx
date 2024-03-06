@@ -1,10 +1,11 @@
 // import React from 'react'
-
 import { WishList, delivery, psBig, psImages, returnIcon } from "../assets";
 import { style } from "../styles";
 import Button from "./Button";
 import Rating from "./Rating";
 import { Counter, OurProducts } from "./index";
+
+
 const ProductDetails = () => {
     let sizes = ["XS", "S", "M", "L", "XL"];
     return (
@@ -57,7 +58,7 @@ const ProductDetails = () => {
                             })}
                         </div>
                     </div>
-                    <div className="flex gap-4 justify-start items-center sm:flex-row flex-col">
+                    <div className="w-full flex gap-4 justify-around items-center sm:flex-row flex-col">
                         <Counter />
                         <div className="flex gap-4 justify-center items-center">
                             <Button title="Buy Now" />
@@ -96,7 +97,6 @@ const ProductDetails = () => {
                     </div>
                 </div>
             </div>
-
             <OurProducts />
         </>
     );

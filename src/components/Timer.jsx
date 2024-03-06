@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const Timer = () => {
     const [Timer, setTimer] = useState({
-        countDownDate: new Date("Mar 03, 2024 00:00:00").getTime(),
+        countDownDate: new Date("Mar 10, 2024 00:00:00").getTime(),
         now: new Date().getTime(),
         timeLeft: "00",
         days: "00",
